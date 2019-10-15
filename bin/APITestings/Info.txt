@@ -1,0 +1,23 @@
+Sonar Qube: 
+
+Uses: 
+	>>Raise Quality code
+	>>Duplicate code
+	>>Unused Code 
+Rules:
+	>>check as per coding standards
+	>>logic, test scripts 
+
+Setting up Sonar Qube : 
+	>>Can be installed directly
+	>>through Docker container for Sonar qube(preferred & easy)
+	
+	Step 1: install docker in your machine
+	Step 2: set up your docker-compose.yml file in your machine with required details
+	Step 3: navigate to the path through cmd prompt and execute the command "docker-compose up-d"
+	Step 4: positive message with up to date
+	Step 5: Launch a browser and type localhost:9000/sessions/new  (Note: Port no mentioned in .yml file)
+	Step 6: Once launch, user admin for user name & password
+	Step 7: Select any project pom.xml(Check Pom.xml contains required plugin(Check Pom.xml)
+	Step 8: navigate to the path in cmd prompt and run --> mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000
+	
